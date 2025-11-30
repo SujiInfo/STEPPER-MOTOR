@@ -1,11 +1,14 @@
 # STEPPER MOTOR INTERFACING
 
+
 ## AIM
+
 To write an assembly language program in 8086 to rotate the motor at different speeds.
 
 ---
 
 ## APPARATUS REQUIRED
+
 
 | S. No | Item                        | Specification   | Quantity |
 |-------|-----------------------------|-----------------|----------|
@@ -16,12 +19,16 @@ To write an assembly language program in 8086 to rotate the motor at different s
 
 ---
 
+
 ## THEORY
+
 A motor in which the rotor is able to assume only discrete stationary angular positions is a **stepper motor**. The rotary motion occurs in a stepwise manner from one equilibrium position to the next.  
 
 **Two-phase scheme:** Any two adjacent stator windings are energized. There are two magnetic fields active in quadrature and none of the rotor pole faces can be in direct alignment with the stator poles. A partial but symmetric alignment of the rotor poles is of course possible.
 
+
 ---
+
 
 ## ALGORITHM
 For running the stepper motor in clockwise and anticlockwise directions:
@@ -34,6 +41,7 @@ For running the stepper motor in clockwise and anticlockwise directions:
 
 ---
 
+
 ## SWITCHING SEQUENCE OF STEPPER MOTOR
 
 | Memory Location | A1 | A2 | B1 | B2 | Hex Code |
@@ -45,7 +53,9 @@ For running the stepper motor in clockwise and anticlockwise directions:
 
 ---
 
+
 ## PROGRAM
+
 
 ```asm
 ; Stepper Motor Interfacing Program in 8086 Assembly
@@ -68,9 +78,18 @@ L1:      DEC DX
          HLT                  ; Stop
 
 DATA:    DB 09H, 05H, 06H, 0AH ; Array of data
+
+
 ```
+
 ## OUTPUT OF THE PROGRAM:
 
+
+<img width="644" height="483" alt="image" src="https://github.com/user-attachments/assets/56f975bf-e271-452a-b29c-bdc67562d952" />
+
+
+
 ## RESULT
+
 
 Thus, the assembly language program for rotating the stepper motor in both clockwise and anticlockwise directions was written and verified.
